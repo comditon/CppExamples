@@ -5,7 +5,7 @@
 
 using namespace std;
 
-struct myStruc1{
+struct myStruct1{
   int a;
   char b;
   double c[30];
@@ -38,6 +38,17 @@ int main(void){
   cout << "The type of ex4 is " <<  typeid(ex4).name() << endl;
   cout << "The type of ex5 is " <<  typeid(ex5).name() << endl;
   cout << "The type of ex6 is " <<  typeid(ex6).name() << endl;
+
+
+  ex1.a = 50;
+  ex1.b = 't';
+  ex1.c[0] = 7.35;
+
+  struct myStruct1 *p = &ex1;
+
+  cout << "p-> a = " << p -> a << endl;
+  cout << "p-> b = " << p -> b << endl;
+  cout << "p-> c[0] = " << p -> c[0] << endl;
 
   return 0;
 }
