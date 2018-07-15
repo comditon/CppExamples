@@ -1,6 +1,6 @@
 /*
  * This program shows the difference between static and dynamic declaration of instances of classes.
- * Remember that you should deallocate dynamically declared instaces!
+ * Remember that you should deallocate dynamically declared instances!
  */
 #include <iostream>
 using namespace std;
